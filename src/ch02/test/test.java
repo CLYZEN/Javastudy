@@ -16,7 +16,7 @@ public class test {
 		
 		// 다음 자동 타입 변환에서 컴파일 에러가 발생하는 것을 선택하세요.
 		byte byteValue = 10;
-		char charValue = ‘A’;
+//		char charValue = ‘A’;
 		
 //		➊ int intValue = byteValue; 
 //		➋ int intValue = charValue;
