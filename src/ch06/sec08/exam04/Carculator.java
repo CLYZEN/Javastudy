@@ -2,6 +2,7 @@ package ch06.sec08.exam04;
 
 public class Carculator {
 	// 필드 생성자 없음
+
 	
 	// 메소드
 	// 메소드 오버로딩 : 
@@ -13,7 +14,7 @@ public class Carculator {
 	double areaRectangle (double width) {
 		return width * width; // 정사각형의 넓이
 	}
-	double areaRectangle (double width, double height) {
+	static double areaRectangle (double width, double height) {
 		return width * height; // 직사각형의 넓이
 	}
 }

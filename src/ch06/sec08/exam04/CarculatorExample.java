@@ -9,5 +9,6 @@ public class CarculatorExample {
 		
 		double result2 = Calc01.areaRectangle(10, 50);
 		System.out.println(result2);
+	
 	}
 }
