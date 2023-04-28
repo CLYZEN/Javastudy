@@ -22,7 +22,7 @@ public class Account {
 		return accountNum;
 	}
 	
-	public void howManyInputMoney(int manyMoney) {
+	public void setHowManyInputMoney(int manyMoney) {
 		if (manyMoney <= 0) {
 			System.out.println("0 이상의 숫자를 입력해주세요.");
 			return;
@@ -30,11 +30,15 @@ public class Account {
 		money += manyMoney;
 	}
 	
-	public void howManyOutMoney(int manyMoney) {
+	public void setHowManyOutMoney(int manyMoney) {
 		
 		
 		if (manyMoney <= 0) {
 			System.out.println("0 이상의 숫자를 입력해주세요.");
+			return;
+		}
+		if (money < manyMoney) {
+			System.out.println("계좌 잔액이 부족합니다!");
 			return;
 		}
 		money -= manyMoney;
@@ -42,11 +46,13 @@ public class Account {
 	}
 	
 	public void printAccounts() {
-		System.out.print(accountNum);
-		System.out.print("\t");
-		System.out.print(name);
-		System.out.print("\t");
-		System.out.println(money);
+		
+			System.out.print(accountNum);
+			System.out.print("\t");
+			System.out.print(name);
+			System.out.print("\t");
+			System.out.println(money);
+		
 	}
 	
 }
