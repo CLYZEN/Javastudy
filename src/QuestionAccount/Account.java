@@ -28,6 +28,7 @@ public class Account {
 			return;
 		}
 		money += manyMoney;
+		System.out.println("입금이 성공되었습니다.");
 	}
 	
 	public void setHowManyOutMoney(int manyMoney) {

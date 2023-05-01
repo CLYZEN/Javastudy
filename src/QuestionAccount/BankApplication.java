@@ -70,7 +70,7 @@ public class BankApplication {
 			if (accounts[i].getAccountNum().equals(accountNumber)) {
 				System.out.println("동일한 계좌는 생성이 불가능합니다.");
 				return;
-			} else if (index >= 100) {
+			} else if (index > 100) {
 				System.out.println("은행 계좌 갯수 한도를 초과하여 개설이 불가능합니다.");
 				return;
 			}

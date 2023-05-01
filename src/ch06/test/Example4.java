@@ -17,8 +17,6 @@ public class Example4 {
 		return result;
 	}
 	
-
-
 	public static void main(String[] args) {
 		int[] data = { 3, 2, 9, 4, 7 };
 
