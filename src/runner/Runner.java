@@ -1,10 +1,10 @@
 package runner;
 
 public class Runner {
-	private int runnerID;
-	private String runnerName;
-	private String runnerGrade;
-	private int runLength;
+	protected int runnerID;
+	protected String runnerName;
+	protected String runnerGrade;
+	protected int runLength;
 	int runAccumulatePoint;
 	int runAccumulatePointRatio;
 	
@@ -19,7 +19,7 @@ public class Runner {
 	}
 	
 	private void initRunner() {
-		runnerGrade = "Normal";
+		runnerGrade = "Common";
 		runLength = 0;
 		runAccumulatePointRatio = 2;
 	}
@@ -29,6 +29,40 @@ public class Runner {
 	}
 	
 	public String showRunner() {
-		return runnerName + " 님은 " + runnerGrade + "등급 runner입니다.";
+		return runnerName + " 님은 " + runnerGrade + "등급 runner입니다." + "포인트" + runAccumulatePoint;
 	}
+
+	public int getRunnerID() {
+		return runnerID;
+	}
+
+	public void setRunnerID(int runnerID) {
+		this.runnerID = runnerID;
+	}
+
+	public String getRunnerName() {
+		return runnerName;
+	}
+
+	public void setRunnerName(String runnerName) {
+		this.runnerName = runnerName;
+	}
+
+	public String getRunnerGrade() {
+		return runnerGrade;
+	}
+
+	public void setRunnerGrade(String runnerGrade) {
+		this.runnerGrade = runnerGrade;
+	}
+
+	public int getRunLength() {
+		return runLength;
+	}
+
+	public void setRunLength(int runLength) {
+		this.runLength = runLength;
+	}
+	
+	
 }
