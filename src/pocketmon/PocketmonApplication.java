@@ -10,9 +10,9 @@ public class PocketmonApplication {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Pocketmon pocketmon1 = new Pikachu("노란전기지짐이");
-		Pocketmon pocketmon2 = new Ggobugi("물대포많이쏘기");
-		Pocketmon pocketmon3 = new Pairi("천연화력자원");
+		Pocketmon pocketmon1 = new Pikachu("피카츄1");
+		Pocketmon pocketmon2 = new Ggobugi("꼬부기1");
+		Pocketmon pocketmon3 = new Pairi("파이리1");
 		
 		pocketmonList.add(pocketmon1);
 		pocketmonList.add(pocketmon2);
@@ -22,8 +22,8 @@ public class PocketmonApplication {
 		
 		sellMyPocketmon(1);
 		
-		pocketmonIn("노란전기지짐이");
-		pocketmonOut("노란전기지짐이");
+		pocketmonIn("피카츄1");
+		pocketmonOut("피카츄1");
 		
 		
 	}
@@ -41,10 +41,10 @@ public class PocketmonApplication {
 	
 	public static void sellMyPocketmon(int index) {
 		showPocketmons();
-		System.out.println(index + "번 포켓몬을 팔았다!! 좋은 식자재가 될거다!");
+		System.out.println(index+1 + "번 포켓몬을 팔았다!! 좋은 식자재가 될거다!");
 		pocketmonList.remove(index);
 		System.out.println("남은 포켓몬");
-		Pocketmon pocketmon = findPocketmon("천연화력자원");
+		Pocketmon pocketmon = findPocketmon("피카츄1");
 		pocketmon.sellPocketmon();
 		showPocketmons();
 		System.out.println("현재 포켓몬포인트 : " + pocketmon.getPocketmonPoint());

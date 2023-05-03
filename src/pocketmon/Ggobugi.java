@@ -11,11 +11,7 @@ public class Ggobugi extends Pocketmon {
 		super.pocketmonSellPoint = 3;
 	}
 
-	@Override
-	public String showPocketmon() {
-		
-		return "꼬북이 |" + pocketmonNickName + "|" +  pocketmonAttribute + "| 체력 : " + pocketmonHealth + "| 레벨 : " + pocketmonLevel + "| 공격력 : " +  pocketmonAttackPoint; 
-	}
+
 	@Override
 	public void monsterballIn() {
 		System.out.println("꼬북이를 들여보냈다!");

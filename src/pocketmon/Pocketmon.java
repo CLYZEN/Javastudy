@@ -40,7 +40,7 @@ public class Pocketmon {
 		}
 		
 		public String showPocketmon() {
-			return pocketmonName + "|" + pocketmonNickName + "|" +  pocketmonAttribute + "|" + pocketmonHealth + "|" + pocketmonLevel + "|" +  pocketmonAttackPoint;  
+			return pocketmonName + " | " + pocketmonNickName + " | " +  pocketmonAttribute + " | 체력 : " + pocketmonHealth + " | 레벨 : " + pocketmonLevel + " | 공격력 : " +  pocketmonAttackPoint;  
 		}
 
 		public String getPocketmonName() {

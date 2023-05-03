@@ -11,11 +11,7 @@ public class Pikachu extends Pocketmon {
 		super.pocketmonSellPoint = 5;
 	}
 
-	@Override
-	public String showPocketmon() {
-		
-		return  "피카츄 |" + pocketmonNickName + "|" +  pocketmonAttribute + "| 체력 : " + pocketmonHealth + "| 레벨 : " + pocketmonLevel + "| 공격력 : " +  pocketmonAttackPoint; 
-	}
+
 
 	@Override
 	public void monsterballIn() {
