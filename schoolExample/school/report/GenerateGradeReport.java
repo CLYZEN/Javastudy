@@ -5,7 +5,10 @@ import java.util.ArrayList;
 import grade.BasicEvaluation;
 import grade.GradeEvaluation;
 import grade.MajorEvaluation;
-import school.*;
+import school.School;
+import school.Score;
+import school.Student;
+import school.Subject;
 import utils.Define;
 
 public class GenerateGradeReport {
