@@ -12,6 +12,6 @@ public class Sec11Q6_Member {
 	@Override
 	public String toString() {
 
-		return name;
+		return id + ": " +name;
 	}
 }
